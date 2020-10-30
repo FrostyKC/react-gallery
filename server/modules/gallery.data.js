@@ -1,8 +1,8 @@
 const galleryItems = [
   {
     id: 1,
-    path: 'images/goat_small.jpg',
-    description: 'Photo of a goat taken at Glacier National Park.',
+    path: 'images/wrx.jpg',
+    description: 'Photo of the car I have always wanted.',
     likes: 0,
   },
   {
@@ -13,7 +13,7 @@ const galleryItems = [
   },
   {
     id: 3,
-    path: 'images/Old_School_RuneScape_logo.png',
+    path: 'images/osrslogo.png',
     description: 'This game will satisfy any addiction',
     likes: 0,
   },
