@@ -1,7 +1,39 @@
 import React, { Component } from 'react';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
+  state = {
+    gallery: [],
+    errorMsg: null,
+  };
+
+  componentDidMount() {
+    this.getGallery();
+  }
+
+  getGallery() {
+    axios({
+      method: 'GET',
+      url: '/gallery',
+    })
+      .then((response) => {
+        // {
+        //   data: []
+        // }
+        console.log('client GET', response);
+        this.setState({
+          gallery: response.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        this.setState({
+          errorMsg: 'Something went terribly wrong.',
+        });
+      });
+  }
+
   render() {
     return (
       <div className="App">
@@ -10,10 +42,6 @@ class App extends Component {
         </header>
         <br />
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg" />
-        <img src="images/packers.png" />
-        <img src="images/Old_School_RuneScape_logo.png" />
-        <img src="images/Ezreal.jpg" />
       </div>
     );
   }
