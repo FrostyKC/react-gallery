@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+img {
+  width: auto;
+  height: 200px;
+}
+
 .App-header {
   background-color: #222;
   height: 70px;
@@ -18,6 +23,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
