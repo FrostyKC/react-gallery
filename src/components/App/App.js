@@ -13,7 +13,7 @@ class App extends Component {
     this.getGallery();
   }
 
-  getGallery() {
+  getGallery = () => {
     axios({
       method: 'GET',
       url: '/gallery',
@@ -34,7 +34,7 @@ class App extends Component {
           errorMsg: 'Something went terribly wrong.',
         });
       });
-  }
+  };
 
   render() {
     return (
@@ -43,7 +43,10 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        <GalleryList gallery={this.state.gallery} />
+        <GalleryList
+          gallery={this.state.gallery}
+          getGallery={this.getGallery}
+        />
       </div>
     );
   }
