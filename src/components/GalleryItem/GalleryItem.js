@@ -20,17 +20,22 @@ class GalleryItem extends Component {
   render() {
     if (!this.state.isClicked) {
       return (
-        <img
-          className="galleryImg"
-          src={this.props.item.path}
-          alt={this.props.item.description}
-          onClick={this.handleImgClick}
-        />
+        <div>
+          <img
+            className="galleryImg"
+            src={this.props.item.path}
+            alt={this.props.item.description}
+            onClick={this.handleImgClick}
+          />
+          <button>Like</button>
+          <p>{this.props.item.likes} people have liked this!</p>
+        </div>
       );
     } else {
       return (
         <div className="galleryDescription" onClick={this.handleImgClick}>
           <p>{this.props.item.description}</p>
+          <button>Like</button>
         </div>
       );
     }
