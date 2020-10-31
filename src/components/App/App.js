@@ -26,6 +26,7 @@ class App extends Component {
         this.setState({
           gallery: response.data,
         });
+        console.log(this.state.gallery);
       })
       .catch((err) => {
         console.log(err);

@@ -1,16 +1,23 @@
 .App {
   text-align: center;
 }
-.galleryImg {
-  margin-right: 50px;
-  margin-left: auto;
-  margin-bottom: 50px;
-  display: inline-block;
-}
 
-img {
+.galleryImg {
   width: 300px;
   height: 300px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.galleryDescription {
+  max-width: 300px;
+  max-height: 300px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  bottom: 10px;
+  display: inline-block;
 }
 
 .App-header {
