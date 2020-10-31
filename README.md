@@ -1,9 +1,5 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Life Gallery
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+This is a gallery about me! Each picture has a description, click the picture to see the description. Click the description to look ay the picture again. Under each picture displays how many "likes" the picture has. Click the "like" button to add a like to the count.
